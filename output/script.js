@@ -155,3 +155,17 @@ const pr = drawRectangle({ width: 30, length: 45 });
 console.log(pr);
 let sak;
 sak = new Player("Imtiaz", 32, "UK");
+// enum
+var RType;
+(function (RType) {
+    RType[RType["SUCCESS"] = 0] = "SUCCESS";
+    RType[RType["FAILURE"] = 1] = "FAILURE";
+    RType[RType["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    RType[RType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(RType || (RType = {}));
+const res1 = {
+    status: 200,
+    type: RType.SUCCESS,
+    data: 'test'
+};
+console.log(res1);

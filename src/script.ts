@@ -175,4 +175,24 @@ let sak:isPlayer;
 sak=new Player("Imtiaz",32,"UK")
 
 
+// enum
+
+enum RType {SUCCESS,FAILURE,UNAUTHENTICATED,FORBIDDEN}
+
+interface APIResponse<T>{
+  status:number;
+  type:RType;
+  data:T
+}
+
+const res1:APIResponse<string> = {
+  status:200,
+  type:RType.SUCCESS,
+  data:'test'
+
+}
+console.log(res1);
+
+
+
 
