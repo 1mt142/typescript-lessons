@@ -193,6 +193,12 @@ const res1:APIResponse<string> = {
 }
 console.log(res1);
 
+// Tuples
+
+let a = [3,"ok",{p:3}]
+//tuples example
+let b:[number,string,object]=[4,"string",{x:3}]
+
 
 
 

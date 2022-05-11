@@ -169,3 +169,7 @@ const res1 = {
     data: 'test'
 };
 console.log(res1);
+// Tuples
+let a = [3, "ok", { p: 3 }];
+//tuples example
+let b = [4, "string", { x: 3 }];
