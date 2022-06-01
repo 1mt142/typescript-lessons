@@ -173,3 +173,21 @@ console.log(res1);
 let a = [3, "ok", { p: 3 }];
 //tuples example
 let b = [4, "string", { x: 3 }];
+// Generic
+// dynamic type handle <T>
+import { addID } from "./generic/generic.js";
+let user = addID({
+    name: "",
+    age: 38
+});
+console.log(user);
+// here <object> refer <T>
+const resp = {
+    status: 200,
+    type: "Success",
+    data: {
+        name: "100",
+        age: "300"
+    }
+};
+console.log("resp", resp);

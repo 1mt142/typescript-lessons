@@ -199,6 +199,33 @@ let a = [3,"ok",{p:3}]
 //tuples example
 let b:[number,string,object]=[4,"string",{x:3}]
 
+// Generic
+// dynamic type handle <T>
+import {addID} from "./generic/generic.js";
+
+let user =addID ({
+  name:"",
+  age:38
+})
+
+console.log(user);
+
+interface APIRes<T>{
+  status:number,
+  type:string,
+  data:T
+}
+// here <object> refer <T>
+const resp:APIRes<object> ={
+  status:200,
+  type:"Success",
+  data:{
+    name:"100",
+    age:"300"
+  }
+}
+console.log("resp",resp);
+
 
 
 
